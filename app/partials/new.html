@@ -1,0 +1,17 @@
+<h2>{{action}} Employee</h2>
+
+
+
+<form name="employeeform" class="form-horizontal">
+  <formfield prop="Name" ng-model="employee.name"></formfield>
+  <formfield prop="Title" ng-model="employee.title"></formfield>
+  <formfield prop="Salary" ng-model="employee.salary"></formfield>
+  <formfield prop="Year" ng-model="employee.year">  </formfield>
+
+  <div class="form-actions">
+    <button ng-click="save()" class="btn btn-primary">
+      {{action}}
+    </button>
+    <a href="/" class="btn">Cancel</a>
+  </div>
+</form>
